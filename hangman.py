@@ -8,11 +8,9 @@ word_letters = len(guessing_word)
 game_over = False
 tries = 6
 
-#Import the game name from hangman_life.py and print it at the game start:
 from hangman_life import game_name
 print(game_name)
 
-#Testing your code:
 print(f'The word you guessed is {guessing_word}.')
 
 #Create blank list called result to add right letters that the players have guessed to it:
@@ -52,6 +50,6 @@ while not game_over:
         game_over = True
         print("You are a winner, Congratulations.")
 
-    # Import the lives from hangman_life.py module and make this error go away.
+
     from hangman_life import lives
     print(lives[tries])
